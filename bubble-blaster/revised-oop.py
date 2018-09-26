@@ -149,12 +149,6 @@ class Game():
         self.ship = Ship(self.canvas)
         self.ship.move(self.mid_x, self.mid_y)
 
-    def coords_of(cid):
-        pos = c.coords(cid)
-        x = (pos[0] + pos[2]) / 2
-        y = (pos[1] + pos[3]) / 2
-        return x, y
-
     def create_bubble(self):
         x = self.width + self.gap
         y = random.randint(0,self.height)
